@@ -1,0 +1,23 @@
+.browse {
+  color: #fff;
+  .title {
+    margin-left: 1rem;
+    margin-top: 5rem;
+    font-size: 1.4rem;
+  }
+}
+/* Phần track của thanh cuộn */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Màu nền cho phần track */
+}
+
+/* Phần thumb của thanh cuộn */
+::-webkit-scrollbar-thumb {
+  background-color: #888; /* Màu nền cho thumb */
+  border-radius: 10px; /* Độ cong của góc cho thumb */
+}
+
+/* Kiểu của thanh cuộn khi hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Màu nền khi hover */
+}

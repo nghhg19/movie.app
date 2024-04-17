@@ -1,0 +1,73 @@
+.movies {
+  position: relative;
+  .movieList {
+    padding: 0.8rem 2rem;
+    display: flex;
+    gap: 0.8rem;
+    overflow-x: overlay;
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+
+    img {
+      width: 12%;
+      cursor: pointer;
+      transition: all 0.15s ease-in;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+  // .movieList:last-child {
+  //   margin-bottom: 0rem;
+  // }
+
+  /* CSS để tùy chỉnh thanh cuộn ngang */
+  .movieList::-webkit-scrollbar {
+    height: 5px; /* Độ rộng của thanh cuộn */
+  }
+
+  .movieList::-webkit-scrollbar-track {
+    background: #7c7c7c2d; /* Màu nền của thanh cuộn */
+  }
+
+  .movieList::-webkit-scrollbar-thumb {
+    background: #7575758d; /* Màu nền của thumb (phần kéo) */
+    border-radius: 6px; /* Bo tròn các cạnh của thumb */
+  }
+
+  .movieList::-webkit-scrollbar-thumb:hover {
+    background: #46464687;
+    cursor: pointer;
+  }
+
+  .btnScrollLeft,
+  .btnScrollRight {
+    position: absolute;
+    top: 30%;
+    padding: 0px 1rem;
+    font-size: 1.5rem;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.364);
+    color: #fff;
+    transition: background-color 0.5s ease;
+    z-index: 1000;
+  }
+
+  .btnScrollLeft:hover,
+  .btnScrollRight:hover {
+    background-color: rgba(8, 8, 8, 0.486);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .btnScrollLeft {
+    left: 1rem;
+  }
+  .btnScrollRight {
+    right: 1rem;
+  }
+}
